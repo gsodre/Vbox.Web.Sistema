@@ -1,0 +1,43 @@
+﻿.auth .pvr_card.pvr_registration {
+    margin-top: 30px;
+}
+
+.auth .pvr_card .title {
+    margin: 0px;
+    text-align: left;
+    color: white;
+}
+
+.pvr_card.pvr_registration {
+    background-color: rgba(10, 25, 47, 0.7);
+}
+
+input.form-control {
+    background-color: transparent;
+}
+
+.pvr_card {
+    border-radius: 10px;
+}
+
+.auth {
+    max-width: 450px;
+}
+
+    .auth .pvr_card {
+        max-width: 450px;
+        height: 300px;
+    }
+
+.body {
+    padding-top: 40px !important;
+}
+
+.content.content--fixed {
+    background: url(/img/login_1.jpg);
+    background-size: cover;
+}
+
+.content--fixed:after {
+    background: transparent !important;
+}

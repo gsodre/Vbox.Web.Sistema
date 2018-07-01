@@ -1,106 +1,147 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
+    //ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+<head>
+    <title>.:: Vbox - FullManager ::.</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Uma nova ferramenta web, para o gerenciamento do seu negócio." />
+    <meta name="keywords" content="vbox, fullmanager, full manager, pelotas, erp, sistema de gerenciamento" />
+    <meta name="author" content="Vbox" />
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="~/img/favicon/favicon-32x32.png" type="image/png">
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="~/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/essential.css" rel="stylesheet" />
+    <link href="~/plugins/animate_css/animate.css" rel="stylesheet" />
+    <link href="~/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet" />
+    <link href="~/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+    <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="~/plugins/page_login_v2/modernizr.custom.js"></script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="~/plugins/page_login_v2/fallback.css" />
+    </noscript>
+    <!-- ================== END PAGE LEVEL JS ================== -->
+    <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+    <link rel="stylesheet" type="text/css" href="~/plugins/page_login/css/demo.css" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/plugins/page_login_v2/style.css" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <!-- ================== END PAGE LEVEL STYLE ================== -->
+</head>
+<body class="pvr_authentication theme-orange" style="overflow: hidden;">
+    <!-- begin #page-loader -->
+    <div class="preloader">
+        <div class="loading">
+            <h2>
+                Loading...
+            </h2>
+            <span class="progress"></span>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+    <!-- end #page-loader -->
+    <!-- begin #login -->
+    <div class="content content--fixed">
+        <div class="content__inner">
+            <div class="auth animated fadeInDownBig">
+                <div class="col-lg-12">
+                    <div class="logo m-t-60">
+                        <img class="w-in-50" src="~/img/logo/logowt.png" alt="PVR" />
+                    </div>
+                </div>
+                <div class="pvr_card pvr_registration">
+                    <div class="body">
+                        <div class="row">
+                            <form class="col-lg-12" id="sign_in" method="POST">
+                                <h5 class="title f-s-14 f-w-500">INFORME SUAS CREDENCIAIS</h5>
+
+                                <div class="form-group-pvr form-float">
+                                    <div class="form-line-pvr">
+                                        <input type="email" class="form-control" />
+                                        <label class="form-label">Email</label>
+                                    </div>
+                                </div>
+                                <div class="form-group-pvr form-float m-b-10">
+                                    <div class="form-line-pvr">
+                                        <input type="password" class="form-control" />
+                                        <label class="form-label">Senha</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 m-t-30">
+                                    <a href="#" class="btn btn-success btn-block">Entrar</a>
+                                </div>
+
+                                @*<div class="form-check pull-left">
+                                        <label class="form-check-label">
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="form-check-input" class="styled form-check-input" type="checkbox" checked="" />
+                                                <label for="form-check-input">
+                                                    Mantenha-me conectado.
+                                                </label>
+                                            </div>
+                                        </label>
+                                    </div>*@
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*<ul class="auth-footer">
+                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="#">Sobre a Vbox</a></li>
+                </ul>
+                <p class="footer-text text-center">copyright © 2018 Vbox. All rights reserved.</p>*@
+
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
+    <!-- end #login -->
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="~/plugins/jquery/jquery-1.12.4.min.js"></script>
+    <script src="~/plugins/jquery/jquery-migrate-1.4.1.min.js"></script>
+    <script src="~/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="~/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="~/crossbrowserjs/html5shiv.js"></script>
+    <script src="~/crossbrowserjs/respond.min.js"></script>
+    <script src="~/crossbrowserjs/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="~/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/plugins/jquery-cookie/jquery.cookie.js"></script>
+    <script src="~/plugins/jquery-cookie/js.cookie.js"></script>
+    <!-- ================== END BASE JS ================== -->
+    <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="~/plugins/page_login_v2/jquery.gridrotator.js"></script>
+    <script src="~/js/pvr_ess_login_v2.js"></script>
+    <!-- ================== END PAGE LEVEL JS ================== -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66289183-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-66289183-10');
+    </script>
+</body>
+</html>
